@@ -1,0 +1,291 @@
+<!--Himanshu Kumar | 2011051 | B.Tech | CSE-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Open House, 2015</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="style2.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/cufon-yui.js"></script>
+    <script type="text/javascript" src="js/arial.js"></script>
+    <script type="text/javascript" src="js/slideShow.js"></script>
+    <script type="text/javascript" src="js/cuf_run.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <script src="js/queryloader2.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        window.addEventListener('DOMContentLoaded', function() {
+            new QueryLoader2(document.querySelector("body"), {
+                barColor: "#fff",
+                backgroundColor: "#fff",
+                percentage: false,
+                barHeight: 0,
+                minimumTime: 000,
+                fadeOutTime:800
+            });
+        });
+    </script>
+    <script>
+        // show the given page, hide the rest
+        function showing(elementID) {
+            // try to find the requested page and alert if it's not found
+            var ele = document.getElementById(elementID);
+            if (!ele) {
+                alert("no such element");
+                return;
+            }
+
+            // get all pages, loop through them and hide them
+            var pages = document.getElementsByClassName('page');
+            for(var i = 0; i < pages.length; i++) {
+                pages[i].style.display = 'none';
+            }
+
+            // then show the requested page
+            ele.style.display = 'block';
+        }
+    </script>
+    
+    <div class="logoright">
+        <a target=_blank href="http://iiitd.ac.in"><img src="images/style3colorlarge.jpg" height="70px" width="auto"></a>
+         <img src="images/ii.png" height="100" width="350"> 
+        
+    </div>
+
+    <div class="logoleft">
+        </br>
+        <a href="index.html"><img src="images/openhouselogo.png" height="150px" width="auto"></a>
+    </div>
+</head>
+<body>
+    
+   <div class="navbar-wrapper">
+      <div class="container">
+	<div class="menu_nav">
+        <ul>
+            <li ><a href="index.html">Home<br />
+            <span></span></a></li>
+            <li><a target="_blank" href="http://iiitd.ac.in">IIITD<br />
+            <span></span></a></li>
+            <li ><a href="schedule.html">Schedule<br />
+            <span></span></a></li>
+			<li ><a href="gallery.html">Gallery<br /> 
+            <span></span></a></li>
+            <li><a href="team.html">Team<br />
+            <span></span></a></li>
+            <li><a href="contact.html" class="last">Contact Us<br />
+            <span></span></a></li>
+			<li><a href="../index.html">Research Showcase<br />
+            <span></span></a></li>
+        </ul> 
+    <div class="clr"></div>
+    </div></div></div>
+<div class="main">
+<div class="header">
+<div class="header_resize">
+    
+
+    <div class="clr"></div>
+
+</div>
+<div class="clr"></div>
+<div class="content">
+    <div class="content_resize">
+        <div class="mainbar" >
+            <div class="article">
+                <h2>Research Labs</h2>
+            <nav>
+                <p>What does it mean to do research @IIITD? Visit some of our research labs and interact with research scholars, learn about the area!</p>
+                <ul class="pagination">
+                    <li><span onclick="showing('bio');">1. Image Analysis and Biometrics Research Lab&emsp;&emsp;&emsp;&emsp;&nbsp;</span></li><br><br>
+
+            <div class="article">
+                <div id="bio" class="page" style="display:none">
+                    <h4><b>Image Analysis and Biometrics Research Lab </b><br>(Academic Building, 2nd floor, A wing)</h4>
+                    <p align="justify">The Image Analysis and Biometrics Lab is working on developing novel solutions for
+
+biometrics related problems inspired from image analysis, pattern classification, and 
+
+machine learning paradigms. During the Open House -2015, we will share some interesting 
+
+biometric research projects that the students and faculty members of this lab are pursuing 
+
+at IIIT-Delhi. Some representative examples are latent fingerprint recognition, iris 
+
+recognition, face recognition, kinect, and understanding human perception.
+<br>
+<a target=_blank href="https://research.iiitd.edu.in/groups/iab/index.html"> https://research.iiitd.edu.in/groups/iab/index.html</a></p>
+                </div>
+            </div>
+
+                    <li><span onclick="showing('cerc');">2. Cybersecurity Education and Research Centre (CERC)&nbsp;</span></li><br><br>
+            <div class="article">
+                <div id="cerc" class="page" style="display:none">
+                    <h4><b>Cybersecurity Education and Research Centre (CERC) </b><br>(Academic Building,4th
+
+Wing)</h4>
+                    <p align="justify">Our mission is to: Build systems and tools that are of direct interest to different stakeholders 
+
+(Government, Industry, Citizens); Create a pipeline for Undergraduate, Masters, and Ph.D. students 
+
+working in related areas; Conduct high-end technical training on cybersecurity for Government of 
+
+India officials and corporations in topics such as network security, distributed systems security, multi 
+
+media security, secure coding, protecting critical infrastructure, privacy and security in online social 
+
+media, and so on; Create awareness among public about Cybersecurity and privacy in India.<br>
+                    <a target="_blank" href="http://cerc.iiitd.ac.in">http://cerc.iiitd.ac.in</a></p>
+                </div>
+            </div>
+
+                    <li><span onclick="showing('rfae');">3. RF and Applied Electromagnetics Lab&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</span></li><br><br>
+            <div class="article">
+                <div id="rfae" class="page" style="display:none">
+                    <h4><b>RF and Applied Electromagnetics Lab </b><br>(L31, Library Building, 3rd floor)</h4>
+                    <p align="justify">​The RF and Applied Electromagnetics Lab has the resources for advanced teaching and 
+
+research in the area of RF, Antenna, and Radar. The attendees will be shown the dual-band 
+
+component design approaches using Advanced Design System (ADS). Thereafter, network 
+
+analyser measurement of some of the recently designed dual-band RF components will be 
+
+demonstrated.<br>
+                    <a target="_blank" href="http://www.iiitd.ac.in/facilities/labs/rfael_lab">http://www.iiitd.ac.in/facilities/labs/rfael_lab</a></p>
+                </div>
+            </div>
+                    <li><span onclick="showing('cvl');">4. Circuits and VLSI Lab &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</span></li><br><br>
+            <div class="article">
+                <div id="cvl" class="page" style="display:none">
+                    <h4><b>Circuits and VLSI Lab </b><br>(L33, Library Building, 3rd floor)</h4>
+                    <p align="justify">This teaching/ research laboratory is established to investigate various aspects of VLSI 
+
+circuits and systems design. Specifically we are interested in design of energy efficient digital 
+
+circuits and systems, embedded systems, sensor development etc.<br>
+                    <a target="_blank" href="http://www.iiitd.ac.in/facilities/labs/cvl_lab">http://www.iiitd.ac.in/facilities/labs/cvl_lab</a></p>
+                </div>
+            </div>
+                    <li><span onclick="showing('crp');">5. Cryptography Research Lab&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;</span></li><br><br>
+            <div class="article">
+                <div id="crp" class="page" style="display:none">
+                    <h4><b>Cryptography Research Lab </b><br>(Academic building, 4rd Floor, A wing 4A lab)</h4>
+                    <p align="justify">The Cryptography Research Lab aims at evaluating and developing various secure systems 
+
+using cryptographic techniques. Our lab members are two faculty, nine PhDs, and many 
+
+more Mtech and Btech students. Our research area covers HW & SW implementation 
+
+security, design and evaluation of new and existing cryptographic algorithms and protocols, 
+
+privacy-enhancing technology, development of analysis tools, etc.</p>
+                </div>
+            </div>
+                    <li><span onclick="showing('crl');">6. Communication Research Lab&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;</span></li><br><br>
+            <div class="article">
+                <div id="crl" class="page" style="display:none">
+                    <h4><b>Communication Research Lab </b><br>(Library building, 3rd Floor, L32)</h4>
+                    <p align="justify">The communication system lab aims at bridging the gap between theoretical simulation and
+
+implementation aspects of a communication system.  In principle, the students in this lab 
+
+design and implement the techniques they have learned during their lectures. The 
+
+demonstrations that will be shown to the visitors, include a wireless communication link 
+
+between two software defined radios, a glimpse of a Microsoft spectrum observatory and 
+
+Spectrum sensing using national instruments boards.</p>
+                </div>
+            </div>
+                </ul>
+            </nav>
+            </div>
+            
+            
+            
+            
+            
+        </div>
+        <div class="sidebar">
+            
+             <div class="gadget">
+                <h2 style="color:#CFCFCF">Links</h2>
+                <div class="clr"></div>
+                <ul class="sb_menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="schedule.html">Schedule</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                    <li><a href="#">Research Labs</a></li>
+					<li><a href="../index.html">Research Showcase</a></li>
+					<br><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>
+                </ul>
+            </div>
+            
+            
+            
+            
+                <div class="clr"></div>
+
+
+            </div>
+            
+        </div>
+        <div class="clr"></div>
+    </div>
+</div>
+<div class="fbg">
+    <div class="fbg_resize">
+        <div class="col c1">
+            <h2><span>Image Gallery</span></h2>
+        <a href="gallery.html"><img src="http://i.imgur.com/Eiybzom.jpg" width="58" height="58" alt="pix" /></a> 
+        <a href="gallery.html"><img src="http://i.imgur.com/X7NZb9j.jpg" width="58" height="58" alt="pix" /></a> 
+        <a href="gallery.html"><img src="http://i.imgur.com/kdttfTR.jpg" width="58" height="58" alt="pix" /></a> 
+        <a href="gallery.html"><img src="http://i.imgur.com/2syI7bW.jpg" width="58" height="58" alt="pix" /></a> 
+        <a href="gallery.html"><img src="http://i.imgur.com/yeA4dYg.jpg" width="58" height="58" alt="pix" /></a> 
+        <a href="gallery.html"><img src="http://i.imgur.com/Ne5PU6A.jpg" width="58" height="58" alt="pix" /></a> 
+        <a href="gallery.html"><img src="http://i.imgur.com/3dFZbr2.jpg" width="58" height="58" alt="pix"/></a> 
+        <a href="gallery.html"><img src="http://i.imgur.com/S7qpZta.jpg" width="58" height="58" alt="pix"/></a> 
+        <a href="gallery.html"><img src="http://i.imgur.com/FrKRkLM.jpg" width="58" height="58" alt="pix"/></a>  
+        </div>
+        <div class="col c2">
+            <h2><span>Location</span></h2>
+
+<a href="https://goo.gl/maps/uwJY5"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3504.7911696176247!2d77.272637!3d28.545996000000002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3e564daac1d%3A0x2c582e340e7bc556!2sIIIT+Delhi!5e0!3m2!1sen!2sin!4v1423553812715" width="250" height="200" frameborder="0" style="border:0"></iframe></a>
+
+        </div>
+		<h2><span>Refreshments</span></h2>
+			<div class="col c3">
+                <ul>
+				<p>
+                    <li><a > Cafe Coffee Day</a></li>
+                    <li><a > Cafeteria </a></li>
+					<li><a > IIITD Dining</a></li>
+					<li><a > Dosa Inc. </a></li>
+					<li><a > Juice Corner </a></li>
+				</p>
+                </ul>
+            </div>
+		
+        <!-- <div class="col c3">
+            <p><iframe src="https://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fiiitdelhiresearchshowcase&amp;width=250&amp;height=258&amp;colorscheme=dark&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:250px; height:258px;" allowTransparency="true"></iframe></p>
+        </div> -->
+        <div class="clr"></div>
+    </div>
+    <div class="footer">
+        <!--<p class="lf">
+            <a href="http://sites.iiitd.ac.in/rs11/">RS '11</a> | 
+            <a href="http://sites.iiitd.ac.in/rs12/">RS '12</a> | 
+            <a href="http://sites.iiitd.ac.in/rs13/">RS '13</a> | 
+            <a href="http://sites.iiitd.ac.in/rs14/">RS '14</a>
+        </p -->
+        <p class="lf">IIIT Delhi Open House '15. All rights reserved.</p>
+        <div class="clr"></div>
+    </div>
+</div>
+</div>
+</div>
+</body>
+</html>
